@@ -1,0 +1,8 @@
+services:
+  container:
+    build: .
+    volumes:
+      - ./workspace:/workspace
+    tty: true
+    stdin_open: true
+    command: ["/bin/sh", "-c", "sleep infinity"]
